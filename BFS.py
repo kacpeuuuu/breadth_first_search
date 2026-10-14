@@ -3,7 +3,7 @@ import random
 import time
 import os
 
-os.system('')
+os.system('') #obsluga escape sekwencji do clearowania terminala
 
 def generate_matrix(n: int):
     matrix = [[' ' for i in range(0,n)] for j in range(0,n)]
@@ -142,17 +142,6 @@ if __name__ == "__main__":
     matrix, start, end = generate_random_obstacles(matrix)
     matrix 
 
-    # matrix = [
-    # [' ', 'X', ' ', ' ', ' ', 'X', 'X', 'X'],
-    # ['X', 'X', ' ', 'X', ' ', 'X', 'X', 'X'],
-    # ['Ż', ' ', ' ', ' ', ' ', 'X', 'X', ' '],
-    # [' ', 'X', 'X', ' ', 'X', ' ', 'X', 'X'],
-    # [' ', ' ', ' ', 'X', ' ', ' ', ' ', ' '],
-    # ['X', 'X', ' ', ' ', ' ', 'X', ' ', 'X'],
-    # [' ', ' ', ' ', ' ', 'X', 'R', ' ', ' '],
-    # [' ', ' ', 'X', ' ', ' ', 'X', ' ', 'X']
-    # ]
-    # start,end = (0,2),(5,6)
     print("\033[H\033[J", end="")
     view_matrix(matrix)
 
